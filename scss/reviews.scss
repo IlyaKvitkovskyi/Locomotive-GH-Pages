@@ -1,0 +1,143 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.top {
+  display: block;
+}
+
+.footer__wrapper,
+.top__wrapper {
+  margin-left: 0;
+}
+
+.slider-wrapper__title,
+.contacts__subtitle {
+  margin-left: 0;
+}
+
+ul.header__list {
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+ul.header__list-left {
+  margin-right: 100px;
+}
+
+.header {
+  position: fixed;
+  background-color: #000;
+}
+
+.seo-reviews__tabs-content-first {
+  margin-bottom: 45px;
+  border-bottom: 0.5px solid #5b5b5b;
+  padding-bottom: 45px;
+}
+
+@media (max-width: 1200px) {
+  .seo-reviews {
+    display: block;
+  }
+  .seo-reviews__tabs-content-first {
+    align-items: center;
+  }
+  .seo-reviews__tabs-content-first-video {
+    width: 380px;
+    height: 220px;
+  }
+  .seo-reviews__tabs-content-first-link {
+    bottom: 6em;
+    left: 13em;
+  }
+  .seo-reviews__tabs-top-item + .seo-reviews__tabs-top-item {
+    margin-left: 15em;
+  }
+}
+
+@media (max-width: 960px) {
+  .seo-reviews__tabs-top-item + .seo-reviews__tabs-top-item {
+    margin-left: 3em;
+  }
+  .seo-reviews__tabs-content-first {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .seo-reviews__tabs-content-first-left {
+    max-width: 100%;
+  }
+  .seo-reviews__tabs-content-first-video {
+    width: 618px;
+    height: 292px;
+    margin-bottom: 25px;
+  }
+  .seo-reviews__tabs-content-first-link {
+    bottom: 9em;
+    left: 20em;
+  }
+  .seo-reviews__tabs-top {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 640px) {
+  .seo-reviews__tabs-content-first-video {
+    width: 395px;
+    height: 250px;
+  }
+  .seo-reviews__tabs-content-first-link {
+    bottom: 7em;
+    left: 13em;
+  }
+  .seo-reviews__main-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    width: 90%;
+  }
+  .seo-reviews__desc {
+    font-size: 12px;
+    line-height: 19px;
+    width: 80%;
+  }
+  .seo-reviews__tabs-top-item {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .seo-reviews__tabs-content-first-title {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  .seo-reviews__tabs-content-first-text {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .seo-reviews__tabs-content-first-author {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .seo-reviews__tabs-content-first {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .breadcrumbs__link {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .breadcrumbs {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .seo-reviews__main-title {
+    width: 100%;
+  }
+  .seo-reviews__desc {
+    width: 100%;
+  }
+}

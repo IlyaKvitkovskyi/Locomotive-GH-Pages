@@ -1,0 +1,170 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.top {
+  padding-top: 100px;
+}
+
+ul.header__list {
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+ul.header__list-left {
+  margin-right: 100px;
+}
+
+.header {
+  position: fixed;
+  background-color: #000;
+}
+
+.footer__wrapper,
+.top__wrapper {
+  margin-left: 0;
+}
+
+.slider-wrapper__title,
+.contacts__subtitle {
+  margin-left: 0;
+}
+
+.seo-reviews {
+  padding-bottom: 300px;
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__desc {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  &__item-img-small {
+    display: none;
+  }
+
+  &__tabs-img {
+    display: none;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-count: 4;
+    column-gap: 20px;
+  }
+  &__item {
+    margin-bottom: 55px;
+  }
+
+  &__item-img {
+    margin-bottom: 25px;
+  }
+
+  &__item-name {
+    margin-bottom: 10px;
+    font-size: 27px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  &__item-surname {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  &__item-position {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .seo-reviews {
+    padding-bottom: 200px;
+  }
+  .seo-reviews__tabs-top-item + .seo-reviews__tabs-top-item {
+    margin-left: 13em;
+  }
+}
+
+@media (max-width: 960px) {
+  .seo-reviews {
+    &__tabs-top-item-last {
+      display: none;
+    }
+    &__title-wrapper {
+      flex-direction: column;
+    }
+    &__desc {
+      width: 100%;
+    }
+    &__item-img {
+      width: 200px;
+    }
+  }
+  .seo-reviews__tabs-top-item + .seo-reviews__tabs-top-item {
+    margin-left: 10em;
+  }
+}
+
+@media (max-width: 640px) {
+  .seo-reviews {
+    padding-bottom: 100px;
+    &__items {
+      column-gap: 10px;
+    }
+    &__title-wrapper {
+      margin-bottom: 50px;
+    }
+    &__main-title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    &__item-img {
+      display: none;
+    }
+    &__item-img-small {
+      display: block;
+      margin-bottom: 10px;
+    }
+    &__item-name {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__item-surname {
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 10px;
+    }
+    &__item-position {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+  .seo-reviews__tabs-top-item + .seo-reviews__tabs-top-item {
+    margin-left: 5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .seo-reviews {
+    &__items {
+      justify-content: center;
+    }
+    &__tabs-top-item {
+      font-size: 8px;
+      line-height: 10px;
+    }
+    &__item-img-small {
+      width: 285px;
+    }
+  }
+}

@@ -1,0 +1,186 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  font-weight: 900;
+  font-style: normal;
+  src: local('RFDewiExpanded'), url('../fonts/RFDewiExpanded-UltraBold.woff2') format('woff2'),
+    url('../fonts/RFDewiExpanded-UltraBold.woff') format('woff');
+  font-display: swap;
+}
+
+.footer__wrapper,
+.top__wrapper {
+  margin-left: 0;
+}
+
+.slider-wrapper__title,
+.contacts__subtitle {
+  margin-left: 0;
+}
+
+ul.header__list {
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+ul.header__list-left {
+  margin-right: 100px;
+}
+
+.header {
+  position: fixed;
+  background-color: #000;
+}
+
+.title {
+  font-weight: 600;
+}
+
+// MSM
+.msm {
+  padding-bottom: 200px;
+  &__title {
+    font-size: 37px;
+    line-height: 44px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+  }
+  &__subtitle {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 90px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 360px;
+    height: 315px;
+    background-color: #141414;
+    margin-bottom: 30px;
+    padding: 45px 24px 30px 24px;
+  }
+  &__heading {
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 70px;
+  }
+  &__author {
+    font-size: 12px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  &__author-letter {
+    font-family: 'RF Dewi Expanded';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 31px;
+    background-color: #4e4e4e;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 8px 11px;
+    font-weight: 900;
+  }
+  &__author-letter-first {
+    color: #007eb0;
+  }
+  &__author-letter-second {
+    color: #006ed6;
+  }
+  &__author-letter-third {
+    color: #ea4335;
+  }
+}
+// MSM
+
+@media (max-width: 1200px) {
+  .msm {
+    &__item {
+      width: 460px;
+      height: 390px;
+    }
+    &__text {
+      margin-bottom: 150px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .msm {
+    &__item {
+      width: 300px;
+      height: 320px;
+      margin-bottom: 22px;
+    }
+    &__text {
+      margin-bottom: 50px;
+    }
+    &__heading {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .msm {
+    padding-bottom: 90px;
+    &__items {
+      justify-content: center;
+    }
+    &__item {
+      width: 460px;
+      height: 255px;
+      padding: 40px 15px 25px 15px;
+    }
+    &__heading {
+      width: 60%;
+      font-size: 13px;
+      line-height: 16px;
+    }
+    &__text {
+      font-size: 10px;
+      line-height: 15px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .msm {
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 50px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 30px;
+    }
+    &__item {
+      width: 300px;
+      height: 266px;
+      padding: 40px 15px 25px 15px;
+    }
+    &__heading {
+      width: 80%;
+    }
+  }
+}

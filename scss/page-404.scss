@@ -1,0 +1,74 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+ul.header__list {
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+ul.header__list-left {
+  margin-right: 100px;
+}
+
+.header {
+  position: fixed;
+  background-color: #000;
+}
+
+.footer__wrapper {
+  margin-left: 0;
+}
+
+.page-404 {
+  padding: 50px 0;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+  }
+  &__title {
+    font-size: 140px;
+    line-height: 168px;
+    color: #f1ff39;
+    filter: saturate(200%);
+  }
+  &__subtitle {
+    font-size: 37px;
+    line-height: 44px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .page-404 {
+    &__subtitle {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .page-404 {
+    &__title {
+      font-size: 70px;
+      line-height: 84px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      text-align: center;
+      width: 70%;
+    }
+  }
+}
